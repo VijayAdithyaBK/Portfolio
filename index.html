@@ -5,7 +5,16 @@
     <title>Portfolio</title>
     <link type="text/css" rel="stylesheet" href="index.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link type="text/css" rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">     
+    <link type="text/css" rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+    
+    <script language="javascript" type="text/javascript">
+        function openForm(){
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm(){
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 </head>
 <body style="background: black">
     <header>
@@ -36,7 +45,7 @@
     </section>
      <section class="certificates">
         <div class="container">
-            <div class="certificate">
+            <div class="certificate-heading">
                 <h2>My Certificates</h2>
             </div>
         </div>
@@ -76,6 +85,25 @@
             </div>
         </div>
     </section>
-   
+    <footer class="footer">
+        <div class="footer-content">
+            <h4>&copy;Vijay Adithya</h4>
+        </div>
+        <div class="footer-media">
+            <button onclick="" class="icon-link"><i class="fas fa-phone-alt"></i></button>
+            <button onclick="openForm()" class="icon-link"><i class="fas fa-comment-alt"></i></button>
+        </div>
+    </footer>
+    
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <button class="icon-link" onclick="closeForm()"><i class="fas fa-window-close"></i></button>
+            <h2>Feedback Form</h2>
+            <hr/>
+            <input type="text" name="name" placeholder="Name" maxlength="100" required>
+            <input id="fb" type="text" maxlength="300" name="feedback" placeholder="Feedback" height="200px" required>
+            <button type="submit" class="icon-link" onclick=""><i class="fas fa-pen-nib"></i></button>
+        </form>
+    </div>
 </body>
 </html>
