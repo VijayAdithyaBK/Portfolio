@@ -1,7 +1,7 @@
 h2, h3{
     color: white;
 }
-header, .about, .projects{
+header, .about, .projects, .skills{
     height: 100vh;
 }
 .landing-text{
@@ -17,14 +17,24 @@ header, .about, .projects{
     font-size: 100px;
     font-weight: bold;
     padding: 3rem;
-    background: -webkit-linear-gradient(#FDC7D7 25%, #A5D8F3, #E8E500);
-    background: -o-linear-gradient(#FDC7D7 25%, #A5D8F3, #E8E500);
-    background: -linear-gradient(#FDC7D7 25%, #A5D8F3, #E8E500);
+    background: -webkit-linear-gradient(315deg, #E81123 40%, #2A2A72 45%, #F8002F 65%);
+    background: -o-linear-gradient(315deg, #E81123 40%, #2A2A72 45%, #F8002F 65%);
+    background: -linear-gradient(315deg, #E81123 40%, #2A2A72 45%, #F8002F 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     user-select: none;
     font-style: oblique;
     letter-spacing: 6px;
+}
+.landing-text h1:hover{
+    background: -webkit-linear-gradient(#23F145 25%, #A5D8F3, #E8E500);
+    background: -o-linear-gradient(#23F145 25%, #A5D8F3, #E8E500);
+    background: -linear-gradient(#23F145 25%, #A5D8F3, #E8E500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .social-media{
     margin-top: 0px;
@@ -78,68 +88,18 @@ p{
     color: white;
     text-align: justify;
 }
-.about{
-    padding-top: 2rem;
-}
-.about-heading, .projects-heading, .certificate-heading{
-    text-align: center;
+.about-heading, .projects-heading, .skills-heading, .certificate-heading{
+    text-align: left;
     text-transform: uppercase;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top: 4rem;
+    margin-bottom: 2.5rem;
 }
-.about-heading h2{
-    font-size: 3.2rem;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 1rem;
+.about-heading h2, .projects-heading h2, .skills-heading h2{
+    color: #E81123;
 }
-.projects-heading h2, .certificate-heading h2{
-    font-size: 3.2rem;
-    position: relative;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-.my-projects{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-    grid-gap: 2.5rem;
-    text-align: center;
-    break-after: always;
-}
-.project{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    padding-bottom: 10rem;
-}
-.project h3{
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: 4px;
-    padding-bottom: 1rem;
-}
-.project p{
-    text-align: justify;
-}
-.project a{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: white;
-    cursor: pointer;
-}
-.project a:hover{
-    text-decoration: none;
-    color: rosybrown;
-}
-.icon-container{
-    width: 10rem;
-    height: 8rem;
-    font-size: 5rem;
-    margin: auto;
-    color: white;
-}
+
+
+
 .certificates{
     height: 40vh;
     margin-bottom: 10rem;
@@ -267,5 +227,27 @@ p{
     color: red;
     transition: 0.7s;
     transform: scale(1.2) rotateZ(360deg);
-    
+
+}
+.fa-angle-double-right{
+    color: white;
+    font-size: 5.5rem;
+    padding-right: 3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.fa-angle-double-right:hover{
+    color: #00C9C8;
+}
+.fa-angle-double-left{
+    color: white;
+    font-size: 5.5rem;
+    padding-left: 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.fa-angle-double-left:hover{
+    color: #00C9C8;
 }

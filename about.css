@@ -1,0 +1,10 @@
+.about-heading h2{
+    font-size: 6.2rem;
+    font-weight: bold;
+    position: relative;
+}
+.about-content p{
+    color: #FFE3F1;
+    font-size: 2.3rem;
+    text-align: right;
+}
